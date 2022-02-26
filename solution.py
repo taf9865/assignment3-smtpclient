@@ -3,8 +3,9 @@
 # using the SMTP protocol and send an email message to the mail server.
 
 
-from socket import
-from ssl import
+from socket import *
+# In order to terminate the program
+
 
 # Defining the smtp client
 def smtp_client(port=1025, mailserver='127.0.0.1'):
@@ -86,6 +87,6 @@ def smtp_client(port=1025, mailserver='127.0.0.1'):
     # Fill in end
 
     clientSocket.close()
-    
+
 if __name__ == '__main__':
     smtp_client(1025, '127.0.0.1')
